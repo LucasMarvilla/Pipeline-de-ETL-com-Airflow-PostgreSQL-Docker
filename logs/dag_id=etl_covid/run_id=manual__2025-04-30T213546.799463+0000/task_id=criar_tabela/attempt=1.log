@@ -1,0 +1,13 @@
+{"timestamp":"2025-04-30T21:35:50.143380","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-04-30T21:35:50.144171","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_covid.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-04-30T21:35:50.289193Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T21:35:50.290169Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T21:35:50.291398Z","level":"info","event":"Current task name:criar_tabela","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T21:35:50.291885Z","level":"info","event":"Dag name:etl_covid","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T21:35:50.243615","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-04-30T21:35:50.289584","level":"info","event":"Connection Retrieved 'postgres_etl'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-04-30T21:35:50.293832","level":"info","event":"Running statement: \n        CREATE TABLE IF NOT EXISTS covid_paises (\n            id SERIAL PRIMARY KEY,\n            pais VARCHAR(100),\n            casos INTEGER,\n            mortes INTEGER,\n            recuperados INTEGER,\n            data_insercao TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n        );\n    , parameters: None","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
+{"timestamp":"2025-04-30T21:35:50.295874","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-04-30T21:35:50.319666Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T21:35:50.320288Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T21:35:50.320584Z","level":"info","event":"Task operator:<Task(PythonOperator): criar_tabela>","chan":"stdout","logger":"task"}

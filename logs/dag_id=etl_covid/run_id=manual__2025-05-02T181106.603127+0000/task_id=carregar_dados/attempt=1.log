@@ -1,0 +1,14 @@
+{"timestamp":"2025-05-02T18:11:16.100033","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-02T18:11:16.100638","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_covid.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-02T18:11:16.170450Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T18:11:16.171217Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T18:11:16.171750Z","level":"info","event":"Current task name:carregar_dados","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T18:11:16.172255Z","level":"info","event":"Dag name:etl_covid","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T18:11:16.174461","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-05-02T18:11:16.182019","level":"info","event":"Connection Retrieved 'postgres_etl'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-05-02T18:11:16.219763","level":"info","event":"Loaded 231 rows into covid_paises so far","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
+{"timestamp":"2025-05-02T18:11:16.220003","level":"info","event":"Done loading. Loaded a total of 231 rows into covid_paises","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
+{"timestamp":"2025-05-02T18:11:16.220662","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-02T18:11:16.234491Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T18:11:16.234982Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T18:11:16.235557Z","level":"info","event":"Task operator:<Task(PythonOperator): carregar_dados>","chan":"stdout","logger":"task"}
