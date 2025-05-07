@@ -1,4 +1,21 @@
+## Projeto: Pipeline de ETL com Airflowm PostgreSQL e Docker
+Tecnologias utilizadas: Python, SQL, Apache Airflow, PostgreSQL/MySQL, Docker, Linux
 
+### Descrição do Projeto:
+
+Este projeto tem como objetivo a construção de um pipeline de ETL (Extração, Transformação e Carga) totalmente automatizado e orquestrado com Apache Airflow em ambiente Docker.
+
+O pipeline realiza a extração de dados de uma API pública de Covid-19, seguida de uma etapa de transformação utilizando Python, onde os dados são tratados e estruturados para posterior análise. Após a transformação, os dados são carregados em um banco de dados relacional (PostgreSQL ou MySQL), organizados em um modelo dimensional simples com tabelas de fatos e dimensões normalizadas.
+
+### Destaques do Projeto:
+
+Utilização do Apache Airflow para agendamento e controle do fluxo de dados, com execução automática dos jobs em diferentes etapas.
+
+Ambiente Dockerizado, garantindo portabilidade, reprodutibilidade e isolamento do ambiente de execução.
+
+Logs detalhados no Airflow, permitindo fácil monitoramento e depuração de falhas.
+
+Aplicação de boas práticas de modelagem de dados com normalização e estruturação em esquema dimensional no banco de dados.
 Este guia explica a sequência correta de comandos para subir o Apache Airflow utilizando Docker Compose.
 
 ## Pré-requisitos
