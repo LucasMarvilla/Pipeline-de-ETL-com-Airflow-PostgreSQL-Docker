@@ -5,7 +5,7 @@ Tecnologias utilizadas: Python, SQL, Apache Airflow, PostgreSQL/MySQL, Docker, L
 
 Este projeto tem como objetivo a construção de um pipeline de ETL (Extração, Transformação e Carga) totalmente automatizado e orquestrado com Apache Airflow em ambiente Docker.
 
-O pipeline realiza a extração de dados de uma API pública de Covid-19, seguida de uma etapa de transformação utilizando Python, onde os dados são tratados e estruturados para posterior análise. Após a transformação, os dados são carregados em um banco de dados relacional (PostgreSQL ou MySQL), organizados em um modelo dimensional simples com tabelas de fatos e dimensões normalizadas.
+O pipeline realiza a extração de dados de uma API pública de Covid-19, seguida de uma etapa de transformação utilizando Python, onde os dados são tratados e estruturados para posterior análise. Após a transformação, os dados são carregados em um banco de dados relacional (PostgreSQL), organizados em um modelo dimensional simples com tabelas de fatos e dimensões normalizadas.
 
 ### Destaques do Projeto:
 
